@@ -1,0 +1,111 @@
+html, body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---------------- HERO ------------------*/
+.hero {
+    width: 80%;
+    margin: auto auto;
+}
+
+.hero-header {
+    padding: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+}
+
+.menu {
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #91aeb8;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto 0;
+}
+
+.projectsMenu {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: DM Sans, sans-serif;
+    line-height: 100%;
+}
+
+.blogsMenu{
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: DM Sans, sans-serif;
+    line-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.heroTitle {
+    margin-top: 130px;
+    margin-bottom: 5px;
+    font-feature-settings: "clig" off, "liga" off;
+    font: 700 125px DM Sans, sans-serif;
+    color: #91aeb8;
+    letter-spacing: 0.5px;
+}
+
+.quote {
+    margin-bottom: 50px;
+    color: #91aeb8;
+    width: 40%;
+}
+
+h3 {
+    color:#7c9aa5;
+    font: 700 28px DM Sans, sans-serif;
+    text-align: left;
+    font-feature-settings: "clig" off, "liga" off;
+}
+
+.blogContainer {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    margin-bottom:200px;
+}
+
+.blogCard {
+    width: 32%;
+    height: 295px;
+    border-radius: 24px;
+    border: 1px solid #bfd8e0;
+    background-color: white;
+    padding-top: 18px;
+    padding-right: 40px;
+    padding-bottom: 18px;
+    padding-left: 40px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.blogText {
+    margin-top: -10px;
+    font: 400 18px/25px DM Sans, san-serif;
+    width: 100%;
+    text-align: left;
+    color:#91aeb8;
+}
+
+.projectsButton {
+    color:#91aeb8;
+    font: 600 18px/25px DM Sans, san-serif;
+    letter-spacing: 0.65px;
+}
