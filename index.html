@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
     <head>
@@ -7,76 +8,147 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
-        <!--            INTRO               -->
-        <div class="intro">
+        <!------------ HERO -------------->
+        <div class="hero">
+            <div class="hero-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.jpg" class="logo">
+                    </a>
+                </div>
+    
+                <div class="menu">
+                    <div class="projectsMenu"><a href="projects.html">Projects</a></div>
+                    <div class="blogsMenu"><a href="blogs.html">Blogs</a></div>
+                </div>
+            </div>
+
             <div class="header-text">
-                <h1><span class="typing">Typing...</span></h1>
-                <p class="hook">Hi, I'm <span class="highlight">E</span>mily Loh, an ordinary student
-                 looking for her <span class="highlight">e</span>xtraordinary path</p>
+                <h1><span class="typing">Typing</span></h1>
+                <p class="hook">Hi, I'm <span class="highlight">E</span>mily Loh, an ordinary student looking for her <span class="highlight">e</span>xtraordinary path</p>
+            </div>
+        </div>
+        
+        <!------------ ABOUT ME -------------->
+        <div class="aboutMe">
+            <div class="profile">
+                <img src="img/profile.jpg">
             </div>
 
-            <div class="header-img">
-                <img src="img/profile.jpg" class="profile">
+            <div class="aboutMe-text">
+                <img src="img/aboutMe logo.jpg" class="aboutMe-logo"/>
+                <h1>About Me</h1>
+                <p class="aboutMe-paragraph">
+                    I am a Computer Science and Engineering student based in Silicon
+                    Valley, interested in building user experiences with simple yet
+                    usable designs. In my spare time, you can find me exploring my
+                    curiosities with making YouTube videos, writing a novel,
+                    composing music, and painting a masterpiece. My career goal is
+                    to contribute to technology using my understanding of people to
+                    ensure that technology betters human needs.</p>
             </div>
         </div>
 
-        <!--            PROJECTS            -->
-        <div class="projects">
-            <h2>Projects</h2>
-            <div class="carousel">
+        <!--------- SELECTED WORKS ----------->
+        <div class="selectedWorks">
+            <h2>Selected Works</h2>
 
+            <div class="worksContainer">
+                <div class="projectCard">
+                    <img src="img/imgPlaceholder.jpg" class="testimg">
+                    <h3>P&nbsp;&nbsp;&nbsp;ng</h3>
+                    <p class="selectedWorksText">
+                        A twist on the classic game of pong: the ball is invisible and
+                        you have to guess the position to play.
+                    </p>
+                    <a href="error.html" class="projectsButton">Learn more</a>
+                </div>
+                <div class="projectCard">
+                    <img src="img/imgPlaceholder.jpg" class="testimg">
+                    <h3>Journie</h3>
+                    <p class="selectedWorksText">
+                        A mobile app catered to your mental needs, encouraging self-help
+                        in easy and non-disruptive ways.
+                    </p>
+                    <a href="error.html" class="projectsButton">Learn more</a>
+                </div>
+                <div class="projectCard">
+                    <img src="img/imgPlaceholder.jpg" class="testimg">
+                    <h3>Deck It!</h3>
+                    <p class="selectedWorksText">
+                        A standard 52-card deck game reliant on strategy and a hint of
+                        luck. Beat the game by playing the largest card.
+                    </p>
+                    <a href="error.html" class="projectsButton">Learn more</a>
+                </div>
             </div>
         </div>
 
-        <!--             BLOGS              -->
+        <!------------ BLOGS -------------->
         <div class="blogs">
-            <div class="blog-text">
-                <h2>Blogs</h2>
-                <p class="quote">"Creating is about sharing ideas, sharing aesthetics, sharing what 
-                you believe in with other people" - Shepard Fairey</p>
-            </div>
+            <h2>Blogs</h2>
+            <div class="blogsContainer">
+                <a href="error.html" class="mainBlog">
+                    <img src="img/mainBlog.jpg" class="mainImage">
+                    <div class="mainText">
+                        <h4>Navigating the Battlefield of Keyboard Warriors in the Realm of 280 Characters</h4>
+                        <p class="mainParagraph">
+                        Abraham Lincoln once said, "Don't believe everything you read on
+                        the internet just because there's a picture with a quote next to it."
+                        Well, supposedly.
+                        </p>
+                        <div class="mainDivider"></div>
+                        <div class="mainDetails">
+                            <div class="mainGenre">Technology</div>
+                            <div class="mainDate">Nov 21, 2023</div>
+                        </div>
+                    </div>
+                </a>
 
-            <div class="blog-list">
+                <div class="sideBlogs">
+                    <a href="error.html" class="blogCard">
+                        <img src="img/sideBlog1.jpg" class="sideImage">
+                        <div class="sideText">
+                            <h5>Crashing Perspectives: What is Fundamental Attribution Error?</h5>
+                            <div class="sideDetails">
+                                <div class="sideGenre">Psychology</div>
+                                <div class="sideDivider"></div>
+                                <div class="sideDate">Dec 21, 2023</div>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="error.html" class="blogCard">
+                        <img src="img/sideBlog2.jpg" class="sideImage">
+                        <div class="sideText">
+                            <h5>The Society that Kills Its People: Why South Korea?</h5>
+                            <div class="sideDetails">
+                                <div class="sideGenre">Sociology</div>
+                                <div class="sideDivider"></div>
+                                <div class="sideDate">Jan 4, 2024</div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="error.html" class="blogCard">
+                        <img src="img/sideBlog3.jpg" class="sideImage">
+                        <div class="sideText">
+                            <h5>Game On: Why Are Games Fun and Even Possibly Addicting?</h5>
+                            <div class="sideDetails">
+                                <div class="sideGenre">Game Studies</div>
+                                <div class="sideDivider"></div>
+                                <div class="sideDate">Jan 28, 2024</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!--            CONTACT             -->
-        <div class="contact">
-            <div class="contact-img">
-
-            </div>
-
-            <!--            Form             -->
-            <div class="contact-form">
-                <form action="index.html" autocomplete="off">
-                    <h3 class="title">Get in touch</h3>
-                    <div class="input-container">
-                        <input type="text" name="name" class="input" />
-                        <label for="">Full Name</label>
-                        <span>Full Name</span>
-                    </div>
-
-                    <div class="input-container">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
-                        <span>Email</span>
-                    </div>
-
-                    <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Message</span>
-                    </div>
-
-                    <input type="submit" value="Submit" class="btn" />
-                </form>
-            </div>
-        </div>
         <script src="index.js"></script>
     </body>
 </html>
