@@ -157,6 +157,19 @@
                 backSpeed: 80,
                 backDelay: 1500,
             })
+
+            // Check if the window is maximized
+            function checkWindowSize() {
+                var screenWidth = window.screen.width;
+                var windowWidth = window.innerWidth;
+
+                if (windowWidth < screenWidth * 0.99) {
+                    alert("For the best experience, please maximize your browser window.");
+                }
+            }
+
+            // Check window size when the page loads
+            window.onload = checkWindowSize;
         </script>
         
     </body>
