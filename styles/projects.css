@@ -107,3 +107,114 @@ h3 {
     font: 600 18px/25px DM Sans, san-serif;
     letter-spacing: 0.65px;
 }
+
+
+
+
+
+.projectTitle {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-feature-settings: "clig" off, "liga" off;
+    font: 700 100px DM Sans, sans-serif;
+    color: #91aeb8;
+    letter-spacing: 0.5px;
+}
+
+.projectContainer {
+    width: 80%;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.projectImage {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.projectDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items at the top */
+    margin: 20px auto;
+    width: 90%;
+    gap: 100px; /* Optional: adds space between columns */
+}
+
+.projectParagraph {
+    flex: 2; /* Adjusts the width of this column */
+    font-size: 18px;
+    color: #91AEB8;
+}
+
+.projectTools {
+    flex: 1; /* Adjusts the width of this column */
+    text-align: center;
+    font: 600 20px DM Sans, sans-serif;
+    letter-spacing: 1px;
+    color: #91aeb8;
+}
+
+.icons {
+    display: grid;
+    width: 60%;
+    margin: 10px auto;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    grid-gap: 15px; /* Adds spacing between the images */
+    justify-content: center; /* Centers the grid in the container */
+}
+
+.icons img {
+    max-width: 60px; /* Adjust as needed */
+    height: auto;
+    margin: 0 auto; /* Centers each image within its grid cell */
+}
+
+.downloadSection {
+    background-color: #E3F2F8; /* Light blue background color */
+    padding: 60px 50px; /* Space inside the container */
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between text and buttons */
+    max-width: 100%; /* Set a max width */
+    margin: 50px auto; /* Center horizontally with margin */
+    gap: 100px;
+}
+
+.downloadText {
+    flex: 1;
+    font-size: 24px; /* Larger font size */
+    color: #91AEB8; 
+    margin: 0; /* Remove default margin */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    font-weight: 600; /* Semi-bold text */
+}
+
+.buttons {
+    display: flex; /* Align buttons in a row */
+    gap: 20px; /* Space between buttons */
+}
+
+.download-btn, .github-btn {
+    padding: 20px 50px; /* Button padding */
+    border-radius: 30px; /* Fully rounded buttons */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    line-height: 16px;
+}
+
+.download-btn {
+    background-color: #90A4AE; /* Gray-blue color */
+    color: white; /* White text */
+    border: 2px solid #90A4AE;
+}
+
+.github-btn {
+    color: #90A4AE;
+    border: 2px solid #90A4AE;
+}
+
+.footer {
+    height: 100px;
+}
