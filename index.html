@@ -28,8 +28,8 @@
             </div>
 
             <div class="header-text">
-                <h1><span class="typing">Typing</span></h1>
-                <p class="hook">Hi, I'm <span class="highlight">E</span>mily Loh, an ordinary student looking for her <span class="highlight">e</span>xtraordinary path</p>
+                <h1 class="text"><span class="typing"></span></h1>
+                <p class="hook">Hi, I'm <span class="highlight">E</span>mily Loh, an ordinary developer on a journey to create her <span class="highlight">e</span>xtraordinary</p>
             </div>
         </div>
         
@@ -148,7 +148,16 @@
                 </div>
             </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typingEffect = new Typed(".typing", {
+                strings: ["Developing...", "Searching...", "Innovating...", "Learning..."],
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 80,
+                backDelay: 1500,
+            })
+        </script>
         
     </body>
 </html>
