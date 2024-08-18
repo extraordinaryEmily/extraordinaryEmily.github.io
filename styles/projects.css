@@ -69,22 +69,37 @@ h3 {
 }
 
 .worksContainer {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    gap: 21px;
-    margin-bottom:200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    width: 95%;
+    margin: auto auto;
+}
+
+@media (max-width: 900px) {
+    .worksContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .worksContainer {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
 }
 
 .projectCard {
-    width: 32%;
-    height: 410px;
-    border-radius: 24px;
-    border: 1px solid #bfd8e0;
     background-color: white;
-    padding: 28px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.5px;
+    border: 1px solid #bfd8e0;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .selectedWorksText {
@@ -108,7 +123,9 @@ h3 {
     letter-spacing: 0.65px;
 }
 
-
+.extraSpace {
+    height: 20px;
+}
 
 
 

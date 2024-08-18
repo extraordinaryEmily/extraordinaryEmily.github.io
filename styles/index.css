@@ -89,10 +89,18 @@ a {
 /*---------------- ABOUT ME ------------------*/
 .aboutMe {
     padding: 50px 60px;
-    gap:20px;
-    display: flex;
-    flex-direction: row;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 380px auto;
+}
+
+@media (max-width: 1100px) {
+    .aboutMe {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+        gap: 10px;
+        margin: 100px auto;
+    }
 }
 
 .profile {
@@ -100,18 +108,17 @@ a {
     flex-direction: column;
     line-height: normal;
     width: 500px;
-    margin-right: 50px;
 }
 
 .aboutMe-text {
     display: flex;
     flex-direction: column;
     line-height: normal;
-    width: 48%;
+    width: 100%;
 }
 
 .aboutMe-logo {
-    margin-top: 60px;
+    margin-top: 50px;
     width: 60px;
 }
 
@@ -127,8 +134,8 @@ h1 {
     font-feature-settings: "clig" off, "liga" off;
     margin-top: -10px;
     font: 400 19px/30px DM Sans, sans-serif;
-    width: 460px;
-    line-height: 28px;
+    width: 430px;
+    line-height: 25px;
 }
 
 /*---------------- SELECTED WORKS ------------------*/
@@ -160,20 +167,37 @@ h3 {
 }
 
 .worksContainer {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    gap: 21px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    width: 95%;
+    margin: auto auto;
+}
+
+@media (max-width: 1000px) {
+    .worksContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 700px) {
+    .worksContainer {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
 }
 
 .projectCard {
-    width: 32%;
-    height: 470px;
-    border-radius: 24px;
-    border: 1px solid #bfd8e0;
     background-color: white;
-    padding: 32px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bfd8e0;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .selectedWorksText {
@@ -193,8 +217,8 @@ h3 {
 
 .projectsButton {
     color: #7c9aa5;
-    padding: 20px 60px;
-    width: 50%;
+    padding: 15px;
+    width: auto;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -220,21 +244,33 @@ h3 {
 }
 
 .blogsContainer {
-    flex-direction: row;
-    display: flex;
-    height: 670px;
-    justify-content: center;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    width: 95%;
+    margin: auto auto;
+}
+
+@media (max-width: 1000px) {
+    .blogsContainer {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+        margin: 100px auto;
+    }
 }
 
 /* Main Blog */
 
 .mainBlog {
-    width: 54.7%;
+    width: 100%;
     height: 670px;
     border-radius: 24px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: white;
+}
+
+.mainBlog:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mainImage {
@@ -277,7 +313,7 @@ h4 {
 /* Side Blogs */
 
 .sideBlogs {
-    width: 43%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -290,7 +326,12 @@ h4 {
     justify-content: space-between;
     flex-direction: row;
     display: flex;
-    gap: 24px;
+    gap: 20px;
+}
+
+.blogCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .sideImage {
