@@ -189,3 +189,10 @@ h2 {
 .footer {
     height: 100px;
 }
+
+
+.comments-section {
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  border-top: 1px solid #e0e0e0;
+}
