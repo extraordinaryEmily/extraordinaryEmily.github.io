@@ -197,8 +197,20 @@ h2 {
   border-top: 1px solid #d0d7de;
 }
 
-/* Optional: Control the iframe size */
-.giscus-frame {
-  width: 100% !important;
-  border: none !important;
+/* Reuse your blogContainer layout for the Giscus iframe */
+.giscus-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #d0d7de;
 }
+
+/* Make sure the iframe inside resizes properly */
+.giscus-frame {
+    width: 100% !important;
+    max-width: 100%;
+    border: none !important;
+}
+
