@@ -186,6 +186,13 @@ h2 {
     margin: 5px 0px;
 }
 
+
+.blogContent li {
+    margin: 5px 0px;
+    font: 400 18px DM Sans, sans-serif;
+    color:#7c9aa5;
+}
+
 .footer {
     height: 100px;
 }
