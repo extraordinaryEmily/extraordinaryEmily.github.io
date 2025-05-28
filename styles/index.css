@@ -278,6 +278,8 @@ h3 {
     height: 60%;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+    object-fit: cover; /* This is the key */
+    display: block;     /* Removes any inline spacing below image */
 }
 
 .mainText {
