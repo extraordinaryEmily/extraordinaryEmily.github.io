@@ -162,7 +162,8 @@
                 var screenWidth = window.screen.width;
                 var windowWidth = window.innerWidth;
 
-                if (windowWidth < screenWidth * 0.99) {
+                // Skip the warning on phones/tablets
+                if (screenWidth > 1024 && windowWidth < screenWidth * 0.99) {
                     alert("For the best experience, please use a maximized desktop browser window.");
                 }
             }

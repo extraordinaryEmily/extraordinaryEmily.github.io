@@ -372,3 +372,84 @@ h5 {
     margin-top: -15px
 }
 
+
+/*---------------- MOBILE ------------------*/
+@media (max-width: 700px) {
+    img {
+        max-width: 100%;
+    }
+
+    .hero, .selectedWorks, .blogs {
+        width: 90%;
+    }
+
+    .hero-header {
+        padding: 20px 0;
+    }
+
+    .header-text {
+        margin-top: 120px;
+    }
+
+    .typing, .typed-cursor {
+        font-size: 48px;
+    }
+
+    .hook {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutMe {
+        padding: 20px 5%;
+        margin: 60px auto;
+    }
+
+    .profile, .aboutMe-paragraph {
+        width: 100%;
+    }
+
+    .projectCard {
+        padding: 20px;
+    }
+
+    .blogs {
+        margin: 100px auto;
+    }
+
+    .blogsContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mainBlog {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .mainImage {
+        height: 220px;
+    }
+
+    .mainText {
+        padding: 0 20px;
+    }
+
+    .blogCard {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .sideText {
+        padding: 15px 8px;
+    }
+
+    .sideDetails {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .sideDate {
+        white-space: nowrap;
+    }
+}

@@ -220,3 +220,57 @@ li {
     border: none !important;
 }
 
+
+/*---------------- MOBILE ------------------*/
+@media (max-width: 700px) {
+    img {
+        max-width: 100%;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .hero-header {
+        padding: 20px 0;
+    }
+
+    .heroTitle {
+        margin-top: 60px;
+        font-size: 56px;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .blogCard {
+        padding: 20px;
+    }
+
+    .blogContainer {
+        width: 100%;
+    }
+
+    .blogTitle {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .blogQuote {
+        width: 100%;
+        line-height: 22px;
+    }
+
+    .blogImage {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}

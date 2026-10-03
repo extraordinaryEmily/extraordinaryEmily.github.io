@@ -235,3 +235,69 @@ h3 {
 .footer {
     height: 100px;
 }
+/*---------------- MOBILE ------------------*/
+@media (max-width: 700px) {
+    img {
+        max-width: 100%;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .hero-header {
+        padding: 20px 0;
+    }
+
+    .heroTitle {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 56px;
+    }
+
+    .worksContainer {
+        width: 100%;
+    }
+
+    .projectCard {
+        padding: 20px;
+    }
+
+    .projectTitle {
+        margin-top: 30px;
+        font-size: 48px;
+    }
+
+    .projectContainer {
+        width: 100%;
+    }
+
+    .projectDescription {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .projectTools {
+        width: 100%;
+    }
+
+    .downloadSection {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .downloadText {
+        font-size: 20px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .download-btn, .github-btn {
+        padding: 15px 30px;
+    }
+}
